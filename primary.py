@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: Daniel Villano-Herrera
+# date: 7/22/2021
 
 from random import randint
 
@@ -29,11 +29,32 @@ print('\n' + 'Task 1' + '\n')
 #
 # WRITE CODE BELOW #
 a = float(input('a = '))
-b =
-c =
-d =
+b = float(input('b = '))
+c = float(input('c = '))
+d = float(input('d = '))
 
+# Compares floats a and b, and see if they're equivalent. Prints True if they are and prints False otherwise.
 print('a == b |', a == b)
+
+# Compares floats a, b, and c to see if they're equivalent. Prints True if they are and prints False otherwise.
+print('a == b == c |', a == b == c)
+
+# This comparison shows if a is greater than b, b is greater than c, and prints True. It will print False otherwise.
+print('a > b > c |', a > b > c)
+
+# This comparison shows if a is less than b, b is less than c, and c is less than d, it will print True.
+# It will print False if otherwise.
+print('a < b < c < d', a < b < c < d)
+
+
+print('a != b == c != d', a != b == c != d)
+
+# This comparison shows if a is greater than or equal to b, b is greater than or equal to c, and c is equal to d,
+# it will print True. It will print False if otherwise.
+print('a >= b >= c == d', a >= b >= c == d)
+# This comparison shows if a is less than or equal to b, b is greater than c, and c is less than or equal to d,
+# it will print True. It will print False if otherwise.
+print('a <= b > c <= d', a <= b > c <= d)
 
 # 2 - if Statements (ONLY USE if STATEMENTS)
 print('\n' + 'Task 2' + '\n')
@@ -54,10 +75,21 @@ print('\n' + 'Task 2' + '\n')
 #
 # WRITE CODE BELOW #
 word1 = input('enter a word: ')
-word2 =
+word2 = input('enter another one: ')
 
+# If both user inputs have the same word, then we will print out that they are the same.
+# Otherwise, we'll print that the words are not the same.
 if word1 == word2:
     print(word1, 'and', word2, 'are the same!')
+else:
+    print(word1, 'and', word2, 'are not the same!')
+
+# If word1 is alphabetically lower than word2, then word1 will be printed before word2.
+# Otherwise, word1 will appear after word2.
+if word1 < word2:
+    print(word1, word2)
+else:
+    print(word2, word1)
 
 
 # 3 - if-elif-else Statements
@@ -78,7 +110,20 @@ print('\n' + 'Task 3' + '\n')
 #       5. Otherwise, print 'Lose!'
 #
 # WRITE CODE BELOW #
+dice1 = randint(1, 6)
+dice2 = randint(1, 6)
 
 
-
+if dice1 == dice2 == 1:
+    print('Snake Eyes!', dice1, dice2)
+elif dice1 == dice2:
+    print('Doubles!', dice1, dice2)
+elif dice1 % 2 == dice2 % 2 == 0:
+    print('Evens!', dice1, dice2)
+elif dice1 % 2 == dice2 % 2 == 1:
+    print('Odds!', dice1, dice2)
+elif (dice1 + dice2) > 6:
+    print('Win!', dice1 + dice2)
+else:
+    print('Lose!', dice1 + dice2)
 

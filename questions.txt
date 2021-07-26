@@ -1,11 +1,11 @@
-Name:
-Date:
+Name: Daniel Villano-Herrera
+Date: 7/23/2021
 
 1 - What are the comparison operators and how do they work?
 
 
 2 - What is the name of the type that has the values True and False?
-
+The types are called Booleans.
 
 3 - How do we make decisions within a program?
 
